@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plasma Page</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background: url('https://pbs.twimg.com/media/D0JCf3aXgAA553A.jpg') center center fixed; /* Set background to the provided GIF */
+            background-size: cover;
+            color: #fff; /* Set text color to white */
+        }
+        #bigTitle {
+            text-align: center;
+            font-size: 3em;
+            padding: 50px;
+            background: rgba(0, 0, 0, 0.5); /* Add a semi-transparent black background for better visibility */
+        }
+        #fullscreenButton {
+            display: block;
+            margin: 20px auto;
+            padding: 10px;
+            font-size: 1.5em;
+       
+        }
+        #madeBy {
+            text-align: center;
+            font-size: 1em;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.5); /* Add a semi-transparent black background for better visibility */
+        }
+        #plasmaImage {
+            display: block;
+            margin: 20px auto;
+            max-width: 100%; /* Ensure the image doesn't exceed its natural size */
+        }
+    </style>
+</head>
+<body>
+    <div id="bigTitle">Neal.Fun Unblocker</div>
+    <button id="fullscreenButton" onclick="loadNewWebsite()">Unblock Neal.Fun</button>
+    <div id="gamesButton" onclick="redirectToGames()">Games</div>
+    <div id="madeBy">Made By - <a href="https://sites.google.com/view/echosgames/" target="_blank">Echos Games</a></div>
+
+    <script>
+        function loadNewWebsite() {
+            window.location.href = 'https://neal.fun';
+        }
+
+        function redirectToGames() {
+            // Provide the URL of the games website
+            var gamesUrl = '';
+
+            // Redirect to the games website
+            window.location.replace(gamesUrl);
+        }
+    </script>
+</body>
+</html>
